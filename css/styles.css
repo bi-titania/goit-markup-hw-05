@@ -444,6 +444,7 @@ p {
 .aside {
   position: relative;
   display: flex;
+  align-items: baseline;
 }
 .social-media {
   margin-left: 70px;
