@@ -62,7 +62,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button">Заказать услугу</button>
+          <button type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!---------- Преимущества и навыки ---------->
@@ -105,11 +105,12 @@
             </li>
             <li class="work-item">
               <img src="./img/img2.jpg" alt="разработка мобильных приложений" width="370" />
-            <p class="work-text">Мобильные приложения</p>
+              <p class="work-text">Мобильные приложения</p>
             </li>
-            <li class="work-item"><img src="./img/img3.jpg" alt="дизайн" width="370" />
-            <p class="work-text">Дизайнерские решения</p>
-          </li>
+            <li class="work-item">
+              <img src="./img/img3.jpg" alt="дизайн" width="370" />
+              <p class="work-text">Дизайнерские решения</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -207,7 +208,7 @@
                   </li>
                   <li>
                     <a href="" class="media-link">
-                      <svg class="media-icon" width="20px" height="20";>
+                      <svg class="media-icon" width="20px" height="20" ;>
                         <use href="./img/sprite.svg#twitter"></use>
                       </svg>
                     </a>
@@ -351,28 +352,28 @@
           <ul class="media-list">
             <li>
               <a href="" class="media-link">
-                <svg class="footer-icon" width="20px" height="20">
+                <svg class="footer-icon" width="20" height="20">
                   <use href="./img/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="media-link">
-                <svg class="footer-icon" width="20px" height="20">
+                <svg class="footer-icon" width="20" height="20">
                   <use href="./img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="media-link">
-                <svg class="footer-icon" width="20px" height="20">
+                <svg class="footer-icon" width="20" height="20">
                   <use href="./img/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="" class="media-link">
-                <svg class="footer-icon" width="20px" height="20">
+                <svg class="footer-icon" width="20" height="20">
                   <use href="./img/sprite.svg#linkedin"></use>
                 </svg>
               </a>
@@ -381,5 +382,13 @@
         </aside>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close" data-modal-close>
+          <svg width="11" height="11"><use href="./img/sprite.svg#close-btn"></use></svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
